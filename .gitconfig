@@ -1,0 +1,27 @@
+[user]
+  name = Andy Yong
+  email = ayong@mdsol.com
+[alias]
+  c = commit
+  co = checkout
+  ca = commit --amend
+  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+  s = status
+  b = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
+[color]
+  ui = auto
+[push]
+  default = matching
+[fetch]
+  prune = true
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+[gui]
+  recentrepo = /Users/ayong/mdsol/projects/mccadmin
+[init]
+  templatedir = ~/.git_template
