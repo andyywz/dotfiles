@@ -1,6 +1,6 @@
 [user]
   name = Andy Yong
-  email = ayong@mdsol.com
+  email = andyywz@gmail.com
 [alias]
   c = commit
   co = checkout
@@ -21,7 +21,5 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
-[gui]
-  recentrepo = /Users/ayong/mdsol/projects/mccadmin
 [init]
   templatedir = ~/.git_template
